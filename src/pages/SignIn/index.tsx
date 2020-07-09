@@ -1,19 +1,34 @@
-import React from 'react';
-import { Form } from '@unform/web'
+import React, { useCallback, useRef } from 'react';
 import logoImg from '../../assets/Logo.svg'
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import {FiLogIn, FiChevronRight} from 'react-icons/fi'
-// import { Link, BrowserRouter} from 'react-router-dom'
+import * as Yup from 'yup';
+
+
+import { Link } from 'react-router-dom'
+import {FormHandles} from '@unform/core';
+import { Form } from '@unform/web';
+import {FiLogIn, FiChevronRight} from 'react-icons/fi';
+
 import { Container } from './style';
 
+interface SignFormData {
+  email: string;
+  password: string;
+}
+
 const SignIn = () => {
+  const handleSubmit = useCallback(() => {
+  
+    console.log('Bagaça funcionando')
+  }, [])
+
   return (
     <Container>
-      <img src={logoImg} alt=""/>
+      <img src={logoImg} alt="logo"/>
      <hr/>
 
-     <Form onSubmit={() => {}}>
+     <Form  onSubmit={handleSubmit}>
      
        <label>Email</label>
        <Input type="email" name="email" />
@@ -21,16 +36,19 @@ const SignIn = () => {
        <label>Senha</label>
        <Input type="password" name="senha" />
 
-       <Button type="submit">Acessar <FiChevronRight size={20} /></Button>
+       <Button  type="submit">
+         Acessar 
+         <FiChevronRight size={20} />
+        </Button>
 
      </Form>
 
      <hr className="line"/>
 
-     <a href="/signup">
+     <Link to="/signup">
       <FiLogIn size={25}/>
        Criar conta
-     </a>
+     </Link>
     </Container>
         
   )

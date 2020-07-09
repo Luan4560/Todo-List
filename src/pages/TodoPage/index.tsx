@@ -7,7 +7,15 @@ import logoImg from '../../assets/Logo.svg';
 import  Input  from '../../components/Input';
 import  Button from '../../components/Button';
 
-import {Container, HeaderContainer, ContentName, WrapForm} from './style';
+import {Container, 
+  HeaderContainer, 
+  ContentName, 
+  WrapForm, 
+  InputStyled, 
+  ButtonStyled,
+  ButtonStyledPlus
+
+} from './style';
 
 const TodoPage = () => {
   return (
@@ -34,8 +42,9 @@ const TodoPage = () => {
         <Form onSubmit={() => {}}>
 
         <WrapForm>
-          <Input type="text" name="title"/>
-          <Button>Adicionar <FiPlus/></Button>
+          <InputStyled type="text" name="title" placeholder="Digite uma nova tarefa"/>
+          <ButtonStyled>Adicionar</ButtonStyled>
+          <ButtonStyledPlus><FiPlus size={25}/></ButtonStyledPlus>
         </WrapForm>
 
         </Form>

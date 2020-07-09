@@ -1,16 +1,12 @@
 import React from 'react';
 import GlobaStyle from './global';
-// import SignIn from './pages/SignIn';
-// import SignUp from './pages/SignUp';
-import TodoPage from './pages/TodoPage';
+import Routes from './routes'
 
 function App() {
   return(
     <>
-    {/* <SignIn /> */}
-    {/* <SignUp /> */}
-    <TodoPage />
-    <GlobaStyle />
+      <Routes/>
+      <GlobaStyle />
     </>
   ) 
 }

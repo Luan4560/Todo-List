@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
-import Input from '../../components/Input'
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 export const Container = styled.div`
   height: 100vh;
@@ -47,8 +48,29 @@ export const ContentName = styled.div`
 `;
 
 export const WrapForm = styled.div`
-
   display: flex;
+  align-items: center;
   flex: 1;
-
+  margin-top: 10px;
 `;
+
+export const InputStyled = styled(Input)`
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 46px;
+
+`
+export const ButtonStyled = styled(Button)`
+  border-radius: 0;
+  height: 46px;
+  margin: 0;
+  width: 107px;
+`
+export const ButtonStyledPlus = styled(Button)`
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 46px;
+  margin: 0;
+  width: 57px;
+  background:  #F29202;
+`
