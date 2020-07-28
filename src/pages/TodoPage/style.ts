@@ -73,4 +73,26 @@ export const ButtonStyledPlus = styled(Button)`
   margin: 0;
   width: 57px;
   background:  #F29202;
-`
+`;
+
+export const Card = styled.div`
+  display: flex;
+  background: #262626;
+  height: 62px;
+  justify-content: space-between;
+
+  margin-top: 15px;
+
+  button {
+    border: none;
+    background-color: #3c3c3c;
+    width: 57px;
+  }
+`;
+
+export const TextContent = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+`;

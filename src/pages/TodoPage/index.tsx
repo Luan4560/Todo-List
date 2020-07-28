@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Form } from '@unform/web';
-import {FiLogOut, FiPlus} from 'react-icons/fi'
+import {FiLogOut, FiPlus, FiCheck,FiTrash2} from 'react-icons/fi'
 
 import logoImg from '../../assets/Logo.svg';
 import  Input  from '../../components/Input';
@@ -13,7 +13,9 @@ import {Container,
   WrapForm, 
   InputStyled, 
   ButtonStyled,
-  ButtonStyledPlus
+  ButtonStyledPlus,
+  Card,
+  TextContent
 
 } from './style';
 
@@ -48,6 +50,60 @@ const TodoPage = () => {
         </WrapForm>
 
         </Form>
+
+
+        <Card>
+          <button type="button">
+            <FiCheck size={22} color="#29cb00"/>
+          </button>
+
+          <TextContent>
+            <p>Title one,Title one,Title one,Title one,Title one,</p>
+          </TextContent>
+          <button type="button">
+            <FiTrash2 size={22} color="#999"/>
+          </button>
+        </Card>
+
+        <Card>
+          <button type="button">
+            <FiCheck size={22} color="#29cb00"/>
+          </button>
+
+          <TextContent>
+            <p>Title one,Title one,Title one,Title one,Title one,</p>
+          </TextContent>
+          <button type="button">
+            <FiTrash2 size={22} color="#999"/>
+          </button>
+        </Card>
+
+        <Card>
+          <button type="button">
+            <FiCheck size={22} color="#29cb00"/>
+          </button>
+
+          <TextContent>
+            <p>Title one,Title one,Title one,Title one,Title one,</p>
+          </TextContent>
+          <button type="button">
+            <FiTrash2 size={22} color="#999"/>
+          </button>
+        </Card>
+
+        <Card>
+          <button type="button">
+            <FiCheck size={22} color="#29cb00"/>
+          </button>
+
+          <TextContent>
+            <p>Title one,Title one,Title one,Title one,Title one,</p>
+          </TextContent>
+          <button type="button">
+            <FiTrash2 size={22} color="#999"/>
+          </button>
+        </Card>
+  
     </Container>      
   )
 }

@@ -42,7 +42,11 @@ const SignIn = () => {
         </Button>
 
      </Form>
-
+      <strong >
+        <Link to="/resetpassword">
+          Recuperar Senha
+        </Link>
+      </strong>
      <hr className="line"/>
 
      <Link to="/signup">

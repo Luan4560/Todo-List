@@ -16,6 +16,10 @@ export const Container = styled.div`
     margin: 30px 0;
   }
 
+  strong {
+    margin-top: 25px;
+  }
+
   a {
    color: #FE9E0E;
    display: flex;
